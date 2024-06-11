@@ -1,9 +1,14 @@
+'use client'
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Home() {
+  const handleClick = () => {
+    console.log("clicked!")
+  }
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-4 md:p-24">
       <div className="space-y-4 w-full">
         <h1 className="text-3xl font-bold">KPS Hackaton</h1>
         <p>Hallo beste deelnemer!</p>
@@ -19,7 +24,7 @@ export default function Home() {
               </p>
             </CardContent>
             <CardFooter>
-              <Button>Klik hier!</Button>
+              <Button onClick={handleClick}>Klik hier!</Button>
             </CardFooter>
           </Card>
           <Card>
@@ -32,7 +37,7 @@ export default function Home() {
               </p>
             </CardContent>
             <CardFooter>
-              <Button>Klik hier!</Button>
+              <Button onClick={handleClick}>Klik hier!</Button>
             </CardFooter>
           </Card>
         </div>
