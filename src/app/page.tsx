@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { HoverCardContent, HoverCard, HoverCardTrigger } from "@/components/ui/hover-card";
 
 export default function Home() {
   const handleClick = () => {
@@ -41,6 +42,29 @@ export default function Home() {
             </CardFooter>
           </Card>
         </div>
+        <p>Moeilijke woorden kunnen zo van uitleg worden voorzien: </p>
+        <HoverCard>
+          <HoverCardTrigger>
+            <p className="text-blue-500 cursor-pointer">Partner pensioen</p>
+          </HoverCardTrigger>
+          <HoverCardContent align="start">
+            <div className="space-y-2">
+              <p>Partnerpensioen is een vorm van pensioenuitkering die wordt uitgekeerd aan de partner van een overleden werknemer of gepensioneerde. In Nederland is dit vaak geregeld via een pensioenfonds of een pensioenregeling bij een werkgever.</p>
+              <Button>Meer lezen...</Button>
+            </div>
+          </HoverCardContent>
+        </HoverCard>
+        <HoverCard>
+          <HoverCardTrigger>
+            <p className="text-blue-500 cursor-pointer">Wezen pensioen</p>
+          </HoverCardTrigger>
+          <HoverCardContent align="start">
+            <div className="space-y-2">
+              <p>Wezenpensioen is een uitkering die wordt verstrekt aan de kinderen van een overleden werknemer of gepensioneerde. Het doel van wezenpensioen is om financiële ondersteuning te bieden aan de kinderen die achterblijven na het overlijden van hun ouder.</p>
+              <Button>Meer lezen...</Button>
+            </div>
+          </HoverCardContent>
+        </HoverCard>
       </div>
     </main>
   );
