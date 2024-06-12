@@ -4,15 +4,20 @@ import { gamePhases } from '@/lib/gamePhaseTypes';
 
 interface Props {
     gotoNextPhase: (phase: gamePhases) => void
+    huidigPensioenBedrag: (bedrag: number) => void
     gewenstePensioenBedrag: number
 }
 
-export default function LifeEventsPhase({ gotoNextPhase, gewenstePensioenBedrag }: Props) {
+const mockPensioenBedrag = 500
+
+export default function LifeEventsPhase({ gotoNextPhase, huidigPensioenBedrag, gewenstePensioenBedrag }: Props) {
     const handleGotoNextPhase = () => {
+        huidigPensioenBedrag(mockPensioenBedrag)
         gotoNextPhase(gamePhases.LifeEventsPhase)
     }
 
     const handleOphalenGegevens = () => {
+        huidigPensioenBedrag(mockPensioenBedrag)
         gotoNextPhase(gamePhases.LifeEventsPhase)
     }
 
