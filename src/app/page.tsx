@@ -8,7 +8,7 @@ import { gamePhases } from "@/lib/gamePhaseTypes";
 import { useState } from "react";
 
 export default function Home() {
-  const [currentPhase, setCurrentPhase] = useState<gamePhases>(gamePhases.ProfilePhase)
+  const [currentPhase, setCurrentPhase] = useState<gamePhases>(gamePhases.StartScreen)
   const [totalPensionValue, setTotalPensionValue] = useState<number>(0)
 
   const handleGoToNextPhase = (currentPhase: gamePhases) => {
