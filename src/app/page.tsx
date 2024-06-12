@@ -4,14 +4,8 @@ import ConclusionPhase from "@/components/ConclusionPhase";
 import LifeEventsPhase from "@/components/LifeEventsPhase";
 import ProfilePhase from "@/components/ProfilePhase";
 import StartScreen from "@/components/StartScreen";
+import { gamePhases } from "@/lib/gamePhaseTypes";
 import { useState } from "react";
-
-export enum gamePhases {
-  StartScreen,
-  ProfilePhase,
-  LifeEventsPhase,
-  ConclusionPhase,
-}
 
 export default function Home() {
   const [currentPhase, setCurrentPhase] = useState<gamePhases>(gamePhases.StartScreen)

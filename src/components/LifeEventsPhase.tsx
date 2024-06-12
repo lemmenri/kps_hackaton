@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from './ui/button';
-import { gamePhases } from '@/app/page';
+import { gamePhases } from '@/lib/gamePhaseTypes';
 
 interface Props {
     gotoNextPhase: (phase: gamePhases) => void
