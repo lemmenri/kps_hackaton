@@ -130,7 +130,7 @@ export default function ProfilePhase({ gotoNextPhase, getPensionValue }: Props) 
             </h1>
             <div className='flex flex-col space-y-4 w-full items-center'>
                 <Question vraag={vragen[currentQuestion]} selectedAnswer={handleSelectAnswer} />
-                <p>Benodigd pensioenbedrag: {pensionValue}</p>
+                {/* <p>Benodigd pensioenbedrag: {pensionValue}</p> */}
             </div>
         </div>
     )
