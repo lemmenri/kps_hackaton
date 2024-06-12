@@ -24,10 +24,10 @@ export default function Home() {
   }
 
   return (
-    <main className="flex flex-col items-center justify-between p-4 md:p-24">
+    <main className="flex flex-col items-center justify-between p-4 md:p-8">
       {currentPhase === gamePhases.StartScreen && <StartScreen gotoNextPhase={handleGoToNextPhase} />}
       {currentPhase === gamePhases.ProfilePhase && <ProfilePhase gotoNextPhase={handleGoToNextPhase} getPensionValue={getPensionValue} />}
-      {currentPhase === gamePhases.LifeEventsPhase && <LifeEventsPhase gotoNextPhase={handleGoToNextPhase} />}
+      {currentPhase === gamePhases.LifeEventsPhase && <LifeEventsPhase gotoNextPhase={handleGoToNextPhase} gewenstePensioenBedrag={totalPensionValue} />}
       {currentPhase === gamePhases.ConclusionPhase && <ConclusionPhase gotoNextPhase={handleGoToNextPhase} totalPensionValue={totalPensionValue} />}
     </main>
   );

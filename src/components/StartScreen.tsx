@@ -17,8 +17,8 @@ export default function StartScreen({ gotoNextPhase }: Props) {
             <div className='p-2'>
                 <Image
                     src="/icon.png"
-                    width={538}
-                    height={550}
+                    width={400}
+                    height={400}
                     alt="Golden Years Adventure icon"
                 />
             </div>
